@@ -1,0 +1,39 @@
+{
+  "name": "chat-agent",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Chat agent with one tool (web search), dated memory and honest change detection. Runs on free tiers.",
+  "engines": {
+    "node": ">=20.9"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "seed": "node scripts/seed.mjs",
+    "smoke:live": "node --env-file=.env scripts/smoke-live.mjs"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^4.0.117",
+    "@ai-sdk/groq": "^4.0.81",
+    "@ai-sdk/openai-compatible": "^3.0.90",
+    "@electric-sql/pglite": "^0.5.16",
+    "ai": "^7.0.169",
+    "chrono-node": "^2.10.3",
+    "luxon": "^3.7.2",
+    "next": "^16.4.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.7.6",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "5.9",
+    "vitest": "^4.1.12"
+  }
+}

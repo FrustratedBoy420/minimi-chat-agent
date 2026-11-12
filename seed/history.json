@@ -1,0 +1,71 @@
+{
+  "_note": "Synthetic demo history for the challenge scenarios. Prices are illustrative: they are what the assistant said at the time, which the agent later re-checks. Day specs are relative so the demo works on any date: 'recent:MM-DD' = latest such date before today, 'previous:<weekday>' = latest such weekday before today, 'daysAgo:N'.",
+  "conversations": [
+    {
+      "id": "5eed0000-0000-4000-8000-000000000001",
+      "title": "GitHub Copilot pricing",
+      "day": "recent:11-03",
+      "time": "10:05",
+      "messages": [
+        { "role": "user", "text": "What does GitHub Copilot Business cost per user per month?", "offsetMinutes": 0 },
+        {
+          "role": "assistant",
+          "text": "GitHub Copilot Business costs $19 per user per month, according to GitHub's pricing page (github.com/features/copilot/plans) as of today. Copilot Enterprise is $39 per user per month. Both are billed monthly per seat.",
+          "offsetMinutes": 1
+        }
+      ]
+    },
+    {
+      "id": "5eed0000-0000-4000-8000-000000000002",
+      "title": "CRM shortlist for a 20-person sales team",
+      "day": "previous:monday",
+      "time": "11:30",
+      "messages": [
+        { "role": "user", "text": "We're a 20-person sales team. Can you shortlist 5 CRM tools for us, with pricing?", "offsetMinutes": 0 },
+        {
+          "role": "assistant",
+          "text": "Here are 5 CRMs that fit a 20-person sales team (list prices per user per month, billed annually, USD, from each vendor's pricing page today):\n1. HubSpot Sales Hub Professional: $90\n2. Pipedrive Advanced: $39\n3. Salesforce Sales Cloud Pro Suite: $100\n4. Zoho CRM Professional: $23\n5. Freshsales Growth: $9\nFor 20 users, Zoho and Freshsales are the cheapest; HubSpot and Salesforce have the deepest reporting.",
+          "offsetMinutes": 1
+        },
+        { "role": "user", "text": "Great, let's shortlist those five.", "offsetMinutes": 4 },
+        {
+          "role": "assistant",
+          "text": "Done. Your shortlist: HubSpot Sales Hub, Pipedrive, Salesforce Sales Cloud, Zoho CRM and Freshsales.",
+          "offsetMinutes": 5
+        }
+      ]
+    },
+    {
+      "id": "5eed0000-0000-4000-8000-000000000003",
+      "title": "Managed Postgres hosting",
+      "day": "previous:tuesday",
+      "time": "16:20",
+      "messages": [
+        {
+          "role": "user",
+          "text": "I need managed Postgres hosting for a side project. What are the options and how much do they cost?",
+          "offsetMinutes": 0
+        },
+        {
+          "role": "assistant",
+          "text": "Good options for a side project (USD, monthly, from each provider's pricing page today):\n- Neon Launch: $19/month, usage-based compute beyond the included hours\n- Supabase Pro: $25/month per organization\n- Render Postgres Basic-256mb: $6/month\n- AWS RDS db.t4g.micro (us-east-1): about $12/month plus storage\nFor a small side project, Render or Neon's free tier is enough to start.",
+          "offsetMinutes": 2
+        }
+      ]
+    },
+    {
+      "id": "5eed0000-0000-4000-8000-000000000004",
+      "title": "Name for a habit tracker",
+      "day": "daysAgo:5",
+      "time": "21:10",
+      "messages": [
+        { "role": "user", "text": "Can you suggest a name for my side project? It's a habit tracker.", "offsetMinutes": 0 },
+        {
+          "role": "assistant",
+          "text": "A few ideas: Streakly, Daily Dots, Tiny Wins, Keep. My take: Tiny Wins, since it's friendly and says what the app is for.",
+          "offsetMinutes": 1
+        }
+      ]
+    }
+  ]
+}
